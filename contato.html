@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Lara Alves</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="page-contato">
+  <header class="site-header">
+    <h1 class="site-title">LARA ALVES</h1>
+
+    <nav class="site-nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="projetos.html">Projetos</a>
+      <a class="nav-link" href="habilidades.html">Habilidades</a>
+      <a class="nav-link" href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="contato-wrap">
+    <img
+  src="./imagens/icones.png"
+  alt=""
+  aria-hidden="true"
+  class="contato-icones"
+/>
+<img
+  src="./imagens/java.png"
+  alt=""
+  aria-hidden="true"
+  class="contato-java"
+/>
+    <header class="contato-hero">
+      <h2 class="contato-title">Contato</h2>
+      <p class="contato-subtitle">
+  Vamos conversar sobre o seu projeto.
+</p>
+
+    </header>
+
+    <section class="contato-grid">
+      <!-- IMAGEM COM MOLDURA DUPLA -->
+      <figure class="contato-frame" aria-label="Imagem decorativa de contato">
+        <img src="./imagens/contato.png" alt="Ilustração de contato" />
+      </figure>
+
+      <!-- FORMULÁRIO -->
+      <section class="contato-formcard" aria-label="Formulário de contato">
+        <h3 class="form-title">Vamos conversar</h3>
+        <p class="form-hint">Preencha aqui.</p>
+
+        <form
+          class="contato-form"
+          action="https://formspree.io/f/mzznlrze"
+          method="POST"
+        >
+          <!-- opcional (ajuda no assunto do email) -->
+          <input type="hidden" name="_subject" value="Novo contato pelo site — Lara Alves" />
+
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+          </div>
+
+          <button class="contato-btn" type="submit">Enviar mensagem</button>
+
+          <p class="form-note">
+            Ao enviar, você concorda em compartilhar seus dados apenas para retorno do contato.
+          </p>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
